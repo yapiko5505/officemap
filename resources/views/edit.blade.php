@@ -3,6 +3,7 @@
 @section('content')
         <h1>{{ $office->name }}を編集する</h1>
         {{ Form::model($office, ['route' => ['office.update', $office->id]]) }}
+        @csrf
             <div class='form-group'>
                 {{ Form::label('name', '会社名:') }}
                 {{ Form::text('name', null ) }}

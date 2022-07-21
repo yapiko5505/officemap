@@ -6,10 +6,11 @@
         <h1>会社一覧</h1>
 
         <table class='table table-striped table-hover'>
+            @csrf
             <tr>
                 <th>カテゴリ</th><th>会社名</th><th>住所</th>
             </tr>
- 
+
             @foreach ($offices as $office)
                 <tr>
                     <td>{{ $office->category->name }}</td>

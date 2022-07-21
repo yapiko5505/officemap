@@ -3,6 +3,7 @@
 @section('content')
         <h1>新規登録会社</h1>
         {{ Form::open(['route' => 'office.store']) }}
+        @csrf
             <div class='form-group'>
                 {{ Form::label('name', '会社名:') }}
                 {{ Form::text('name', null ) }}

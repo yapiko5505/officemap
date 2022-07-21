@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@csrf
         <h1>{{ $office->name }}</h1>
         <div>
             <p>{{ $office->category->name }}</p>
